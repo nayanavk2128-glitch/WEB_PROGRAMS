@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Timetable</title>
+<style>
+	table{
+		width:75%;
+		border-collapse:collapse;
+	}
+	th{
+		background-color:light yello;
+	}
+	th,td{
+		border:1px solid;
+		padding:8px;
+		text-align:center;
+		}
+
+	.header{
+		background-color:yellow;
+	}
+	.footer{
+		background-color:yellow;
+		font-weight:bold;
+	}
+	.highlight-row{
+		background-color:purple;
+	}
+	.Lab-hour{
+		background-color:green;
+	}
+	.Elective-hour{
+		background-color:blue;
+	}	
+</style>
+</head>
+<body>
+	<h1>Class Time Table</h1>
+	<table>
+		<!--Table header-->
+		<thead>
+		<tr class="header">
+			<th>Time</th>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+		</tr>
+		</thead>
+		<!--Table Body-->
+		<tbody>
+		<tr class="highlight-row">
+			<td>9:00-10:00</td>
+			<td class="Lab-hour">Math</td>
+			<td class="Elective-hour">Geography</td>
+			<td class="Lab-hour">Physics</td>
+			<td class="Elective-hour">Kannada</td>
+			<td class="Lab-hour">Chemistry</td>
+		</tr>
+		<tr class="highlight-row">
+			<td>10:00-11:00</td>
+			<td class="Elective-hour">Dance</td>
+			<td class="Lab-hour">Math</td>
+			<td class="Elective-hour">History</td>
+			<td class="Lab-hour">Physics</td>
+			<td class="Elective-hour">Yoga</td>
+		</tr>
+		<tr class="highlight-row">
+			<td>11:00-12:00</td>
+			<td class="Lab-hour">Chemistry</td>
+			<td class="Elective-hour">PE</td>
+			<td class="Lab-hour">Math</td>
+			<td class="Elective-hour">Karate</td>
+			<td class="Lab-hour">Physics</td>
+		</tr>
+		<tr class="highlight-row">
+			<td>12:00-1:00</td>
+			<td colspan="5">Lunch Break</td>
+		</tr>
+		<tr class="highlight-row">
+			<td>1:00-2:00</td>
+			<td class="Elective-hour">Yoga</td>
+			<td class="Lab-hour">Physics</td>
+			<td class="Elective-hour">Dance</td>
+			<td class="Lab-hour">Math</td>
+			<td class="Elective-hour">Singing</td>
+		</tr>
+		<tr class="highlight-row">
+			<td>2:00-3:00</td>
+			<td class="Lab-hour">Physics</td>
+			<td class="Elective-hour">Dance</td>
+			<td class="Lab-hour">Computer Science</td>
+			<td class="Elective-hour">Drawing</td>
+			<td class="Lab-hour">Math</td>
+		</tr>
+		</tbody>
+		<!--Table footer-->
+		<tfoot>
+			<tr class="footer">
+			<td colspan="6">End of the time table</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
